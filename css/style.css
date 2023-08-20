@@ -27,7 +27,7 @@ html {
   position: relative;
   overflow: hidden;
   min-height: 800px;
-  padding-top: 16px;
+  padding-top: 13px;
   background-color: #f0f0f0;
 }
 .header__container {
@@ -106,19 +106,23 @@ html {
 
 .right-wrapper {
   position: absolute;
-  top: 150px;
+  top: 143px;
   right: 76px;
   z-index: 5;
   width: 372px;
 }
 .right-wrapper__icons {
+  position: relative;
+  top: 10px;
   padding-left: 10px;
 }
 .right-wrapper__title {
-  margin-bottom: 5px;
+  margin-bottom: 3px;
 }
 .right-wrapper__text {
-  margin-bottom: 20px;
+  position: relative;
+  top: -7px;
+  margin-bottom: 13px;
 }
 
 .icons {
@@ -127,10 +131,14 @@ html {
 }
 
 .title {
+  position: relative;
   font-size: 72px;
   font-weight: 600;
 }
 .title::after {
+  position: absolute;
+  top: 76px;
+  left: 0;
   content: "";
   display: block;
   width: 65px;
@@ -195,7 +203,12 @@ html {
 }
 .section-about__container {
   position: relative;
-  padding-top: 40px;
+  padding-top: 31px;
+}
+.section-about__container .title::after {
+  top: 86px;
+  left: 6px;
+  width: 94px;
 }
 .section-about__title {
   margin-bottom: 40px;
@@ -203,12 +216,12 @@ html {
 .section-about__cards-box {
   display: flex;
   gap: 30px;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 }
 .section-about__icons-box {
   display: flex;
   justify-content: center;
-  gap: 60px;
+  gap: 55px;
 }
 .section-about__first-ellipse {
   position: absolute;
@@ -245,7 +258,7 @@ html {
 }
 .card__text {
   position: absolute;
-  top: 144px;
+  top: 134px;
   right: -45px;
   width: 280px;
   font-size: 36px;
@@ -261,6 +274,7 @@ html {
 }
 .icons-item__text {
   font-size: 18px;
+  line-height: 1.15;
 }
 .icons-item__span {
   font-size: 48px;
@@ -278,24 +292,25 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 46px 19px 46px 167px;
+  padding: 45px 19px 46px 167px;
 }
 .section-learning__right-wrapper {
   position: relative;
   max-width: 480px;
 }
 .section-learning__right-wrapper .title::after {
-  position: absolute;
-  top: 80px;
-  left: 0;
+  top: 65px;
+  left: 15px;
 }
 .section-learning__right-title {
   margin-bottom: 20px;
+  padding-left: 8px;
+  line-height: 0.9;
 }
 .section-learning__text {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 22px;
   margin-bottom: 30px;
   font-size: 18px;
 }
@@ -325,15 +340,15 @@ html {
 }
 .footer__img {
   position: absolute;
-  left: -250px;
+  left: -150px;
   bottom: 0;
 }
 .footer__title {
   position: relative;
   margin-bottom: 20px;
+  line-height: 0.9;
 }
 .footer .title::after {
-  position: absolute;
-  top: 80px;
-  left: 0;
+  top: 62px;
+  left: 3px;
 }
