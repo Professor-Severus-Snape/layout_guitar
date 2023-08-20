@@ -7,7 +7,7 @@ $main-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25)
   position: relative
   max-width: 1140px
   margin: 0 auto
-  outline: 2px solid blue  // временно - для визуализации
+  outline: 2px dashed red  // временно - для визуализации
   
 .header
   position: relative
@@ -245,3 +245,22 @@ $main-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25)
     position: absolute
     top: -123px
     right: -93px
+
+.footer
+  &__container
+    display: flex
+    justify-content: flex-end
+    align-items: center
+    min-height: 272px  // для выравнивания блока
+  &__img
+    position: absolute
+    left: -250px
+    bottom: 0
+  &__title
+    position: relative
+    margin-bottom: 20px
+  .title
+    &::after
+      position: absolute
+      top: 80px
+      left: 0

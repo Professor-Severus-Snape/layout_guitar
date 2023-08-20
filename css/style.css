@@ -2,7 +2,7 @@
   position: relative;
   max-width: 1140px;
   margin: 0 auto;
-  outline: 2px solid blue;
+  outline: 2px dashed red;
 }
 
 .header {
@@ -293,4 +293,25 @@
   position: absolute;
   top: -123px;
   right: -93px;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  min-height: 272px;
+}
+.footer__img {
+  position: absolute;
+  left: -250px;
+  bottom: 0;
+}
+.footer__title {
+  position: relative;
+  margin-bottom: 20px;
+}
+.footer .title::after {
+  position: absolute;
+  top: 80px;
+  left: 0;
 }
