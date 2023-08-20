@@ -4,6 +4,7 @@ $color-grey: #e2e2e2
 $main-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25)
   
 .container
+  position: relative
   max-width: 1140px
   margin: 0 auto
   outline: 2px solid blue  // временно - для визуализации
@@ -160,13 +161,13 @@ $main-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25)
     gap: 60px
   &__first-ellipse
     position: absolute
-    top: 80px
-    right: -60px
+    top: 65px
+    right: -52px
     z-index: -1
   &__second-ellipse
     position: absolute
-    top: 364px
-    left: -60px
+    top: 362px
+    left: -74px
     z-index: -1
 
 .card
@@ -202,3 +203,45 @@ $main-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25)
   &__span
     font-size: 48px
     font-weight: 600
+
+.section-learning
+  position: relative
+  z-index: 0
+  overflow: hidden  // обрезка эллипса
+  min-height: 640px
+  background-color: #f0f0f0
+  &__container
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 46px 19px 46px 167px
+  &__right-wrapper
+    position: relative
+    max-width: 480px
+    .title
+      &::after
+        position: absolute
+        top: 80px
+        left: 0
+  &__right-title
+    margin-bottom: 20px
+  &__text
+    display: flex
+    flex-direction: column
+    gap: 20px
+    margin-bottom: 30px
+    font-size: 18px
+  &__first-ellipse
+    position: absolute
+    top: 159px
+    left: 109px
+    z-index: -1
+  &__full-ellipse
+    position: absolute
+    top: 248px
+    left: 13px
+    z-index: -1
+  &__second-ellipse
+    position: absolute
+    top: -123px
+    right: -93px
