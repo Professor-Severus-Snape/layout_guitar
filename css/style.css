@@ -7,6 +7,7 @@
 .header {
   position: relative;
   overflow: hidden;
+  min-height: 800px;
   padding-top: 16px;
   background-color: #f0f0f0;
 }
@@ -165,4 +166,80 @@
 .ellipse__subtract_big {
   width: 188px;
   height: 188px;
+}
+
+.section-about {
+  min-height: 700px;
+}
+.section-about__container {
+  position: relative;
+  padding-top: 40px;
+}
+.section-about__title {
+  margin-bottom: 40px;
+}
+.section-about__cards-box {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 25px;
+}
+.section-about__icons-box {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+.section-about__first-ellipse {
+  position: absolute;
+  top: 80px;
+  right: -60px;
+  z-index: -1;
+}
+.section-about__second-ellipse {
+  position: absolute;
+  top: 364px;
+  left: -60px;
+  z-index: -1;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  width: 360px;
+  height: 360px;
+  border-radius: 10px;
+}
+.card_first {
+  background-color: #e2e2e2;
+}
+.card_second {
+  background-color: #f28b64;
+}
+.card_third {
+  background-color: #5290ea;
+}
+.card__img {
+  height: 335px;
+}
+.card__text {
+  position: absolute;
+  top: 144px;
+  right: -45px;
+  width: 280px;
+  font-size: 36px;
+  text-align: center;
+  transform: rotate(90deg);
+}
+
+.icons-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.icons-item__text {
+  font-size: 18px;
+}
+.icons-item__span {
+  font-size: 48px;
+  font-weight: 600;
 }
